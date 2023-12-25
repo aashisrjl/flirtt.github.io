@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>-by samir Rimal</h3>
+    <h1> Do you love me ?</h1>
+    <img class="img" src="o.png"> 
+    <div class="btns">
+    <button onclick="tapyes()" class="yes">Yes</button>
+    <button onpointerenter="movebutton()" onclick="movebutton()" class="no">No</button>
+  
+    </div>
+
+    <script>
+      function tapyes(){
+            window.location.href="yes.html";
+      }
+
+      function movebutton() {
+        var x = Math.random() * (window.innerWidth - document.querySelector(".no").offsetWidth);
+        var y = Math.random() * (window.innerHeight - document.querySelector(".no").offsetHeight);
+
+        document.querySelector(".no").style.left = `${x}px`; 
+        document.querySelector(".no").style.top = `${y}px`; 
+
+          
+        }
+
+
+
+
+    </script>
+</body>
+</html>
